@@ -1,0 +1,36 @@
+package ept20_09172019;
+
+import java.util.Scanner;
+
+public class bodyMass {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		
+		//Get user's weight and height
+		
+		double BMI;
+		
+		System.out.println("What is your weight?: ");
+		Double weight=scan.nextDouble();
+		
+		System.out.println("What is your height?: ");
+		Double height=scan.nextDouble();
+		
+		// calculate BMI
+	
+		BMI = weight/height;
+		
+		if(BMI < 18.5)
+			System.out.println("Underweight");
+			else if (BMI <= 18.5 && BMI < 25.0)
+				System.out.println("Noraml");
+			else if (BMI <= 25.0 && BMI < 30.0)
+				System.out.println("Overweight");
+			else 
+				System.out.println("Obese");
+		
+		
+		// send user message 
+		//System.out.println("Your BMI is: " + BMI);
