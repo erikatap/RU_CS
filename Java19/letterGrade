@@ -1,0 +1,41 @@
+package ept20_09172019;
+
+import java.util.Scanner;
+
+public class LetterGrade {
+
+	public static void main(String[] args) {
+		//get user input for numeric grade 
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter your grade: ");
+		int numGrade=scan.nextInt();
+		
+		
+		//output letter grade 
+		
+		if(numGrade > 100)
+			System.out.println("You entered wrong grade.");
+		else
+			
+		if(numGrade >= 90)
+			System.out.println("A");
+		else if (numGrade >= 85)
+			System.out.println("B+");
+			else if(numGrade >= 80)
+				System.out.println("B");
+			else if(numGrade >= 75)
+				System.out.println("C+");
+			else if(numGrade >= 70)
+				System.out.println("C");
+			else if(numGrade >= 60)
+				System.out.println("D");
+			else 
+				System.out.println("F");
+		
+		
+					
+		
+
+	}
+
+}
