@@ -1,0 +1,26 @@
+package ept20_09172019;
+
+import java.util.Scanner;
+
+public class demo {
+
+	public static void main(String[] args) {
+		
+		System.out.println("326+565*91/23=" + (326+565*91/23));
+		
+		//get input for number of seconds (less than 3600)
+		
+		Scanner user_input = new Scanner(System.in);
+		System.out.println("Enter number of second: ");
+		int seconds= user_input.nextInt();
+		
+		
+		//output in format #' ##"
+		int min= seconds/60;
+		int remSec= seconds%60;
+		
+		System.out.println(seconds + " seconds is " + min + "\'"+ remSec + "\".");
+
+	}
+
+}
