@@ -1,0 +1,85 @@
+package ept20_homework2;
+
+import java.util.Scanner;
+
+public class AutoInsurance_ept20 {
+
+	public static void main(String[] args) {
+		
+		
+	 
+		
+		// define basic charge 
+		
+	int BasicInsurance;
+	BasicInsurance=500;
+	
+	int UnderAge;
+	UnderAge=100;
+	
+	int (final)
+		
+		//ask driver for age and for number of accidents 
+		
+	Scanner kb = new Scanner(System.in);
+	System.out.println("What is the driver's age?: ");
+	int age = kb.nextInt();
+	
+	
+	Scanner user_input = new Scanner(System.in);
+	System.out.println("Number of accidents you have had in total: ");
+	int accidents = user_input.nextInt();
+	
+	//conditions based on age. under 25- 100$
+	
+	if (age < 24)
+		(BasicInsurance + UnderAge);
+	else
+		(BasicInsurance);
+	
+	switch(accidents) {
+	case 1:
+		System.out.println("50");
+		break;
+	case 2:
+		System.out.println("125");
+		break;
+	case 3:
+		System.out.println("225");
+		break;
+	case 4:
+		System.out.println("375");
+		break;
+	case 5:
+		System.out.println("575");
+		break;
+	case 6:
+		
+		break;
+		default:
+			System.out.println("you entered wrong month number.");
+	
+	
+	
+	}
+	
+	
+	
+	
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+
+	}
+
+}
